@@ -38,15 +38,17 @@
                     location: "Location:London",
                     price: "price:£100",
                     Spaces: 5,
+                    
                 },
-                cart: []
+                cart: [],
             },
             methods: {
                 additemtocart: function () {
-                    this.cart.push(this.product.id);
+                    this.cart.push(this.product.subject);
                 },
                
             },
+
                 computed: {
                     totalItemsIntheCart: function () {
                       return this.cart.length;
